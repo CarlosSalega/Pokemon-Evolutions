@@ -1,0 +1,39 @@
+@use 'variables';
+
+.card {
+  background-color: variables.$color2;
+  border-radius: 16px;
+  width: 200px;
+  height: 250px;
+  box-shadow: 3px 3px 10px;
+  padding: 48px 12px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &__name {
+    background-color: variables.$color1;
+    text-align: center;
+    color: variables.$color6;
+    width: 140px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px 12px;
+  }
+
+  &__circle {
+    background-color: variables.$color4;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 56px;
+    left: 24px;
+  }
+
+  &__image {
+    position: absolute;
+    z-index: 1;
+  }
+}
